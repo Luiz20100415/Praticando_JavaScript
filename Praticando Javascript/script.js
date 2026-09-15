@@ -112,13 +112,106 @@
 
 // let produtos = [
 //     {id: 1, nome: "Teclado", preco: 50 }, //produto
-//     {id: 2, nome: "mouse", preco: 30 }
+//     {id: 2, nome: "mouse", preco: 30 },
+//     {id: 2, nome: "caderno", preco: 30 }
     
 // ]
 
 // let item = produtos.find(produtos => produtos.id === 2);
 
 // console.log(item);
+
+// DIFERENÇA ENTRE FILTER E FIND
+// find -> retorna somente o primeiro elementos que ele encontra com a condição 
+// filter -> retorna todos os elementos que encontra com a condição
+
+//arrow function / função lambda
+// let itemFiltrado = produtos.filter(produto => produto.id === 2);
+
+
+// console.log(itemFiltrado);
+
+// produtos.filter(function(produto) {
+//     produto.id === 2
+// })
+
+
+// SPLIT
+// Divide a string em partes, transformando em um array
+
+// let frase = "JS é top"
+
+// let palavras = frase.split(" ");
+// console.log(palavras);
+
+
+
+// TRIM
+// trim remove espaço no inicio e final de string
+// let nome = "            Paulo"
+// let nomeLimpo = nome.trim();
+
+// console.log(nome);
+// console.log(nomeLimpo);
+
+
+
+// INCLUDES
+// Verifica se existe um valor dentro de uma lista e retorna um booleano
+// verdadeiro ou falso
+
+// let frutas = ["maçã", "banana"];
+
+// let frutasIncludes = frutas.includes("maçã");
+// console.log(frutasIncludes); //true
+
+
+
+//toLowerCase() -> transforma o texto em minusculo
+//toUpperCase() -> transforma o texto em maiusculo
+// let nome = "LUIZ";
+// let cargo = "jogador de futebol";
+
+// console.log(nome.toLowerCase());
+// console.log(cargo.toUpperCase());
+
+// SOME
+// Verifica se pelo menos um item atende a condição
+// retorna booleano
+
+// let numeros = [1, 3, 5, 8]
+
+// let temPar = numeros.some(num => num % 2 === 0);
+// console.log(temPar); //true
+
+// // EVERY
+// // Verifica se TODOS os elementos atendem a condição
+
+// let todosPares = numeros.every(num => num % 2 === 0);
+// console.log(todosPares); //false
+
+
+
+// SORT
+// Ordena os elementos do array
+
+let numeros = [3, 10, 5, 2, 4];
+let letras = ["c", "a", "x", "h"];
+
+// para letras
+letras.sort();
+console.log(letras);
+
+// para numeros
+numeros.sort((a, b) => a - b);
+console.log(numeros);
+
+
+
+
+
+
+
 
 
 

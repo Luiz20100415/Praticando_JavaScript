@@ -1,5 +1,6 @@
 //EXERCERCIOS - CONDICIONAIS
 
+
 //1. 
 // let idade = Number(prompt("Digite sua idade:"));
 
@@ -69,14 +70,16 @@
 
 
 //6.
-let numero = Number(prompt("Digite um número :"));
+// let numero = Number(prompt("Digite um número :"));
 
-if( numero % 2 == 0) {
-    alert("O numero é par");
-}
-else {
-    alert("O numero é ímpar");
-}
+// if( numero % 2 == 0) {
+//     alert("O numero é par");
+// }
+// else {
+//     alert("O numero é ímpar");
+// }
+
+
 
 
 
