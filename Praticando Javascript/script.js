@@ -156,6 +156,7 @@
 
 
 
+
 // INCLUDES
 // Verifica se existe um valor dentro de uma lista e retorna um booleano
 // verdadeiro ou falso
@@ -175,6 +176,8 @@
 // console.log(nome.toLowerCase());
 // console.log(cargo.toUpperCase());
 
+
+
 // SOME
 // Verifica se pelo menos um item atende a condição
 // retorna booleano
@@ -183,6 +186,8 @@
 
 // let temPar = numeros.some(num => num % 2 === 0);
 // console.log(temPar); //true
+
+
 
 // // EVERY
 // // Verifica se TODOS os elementos atendem a condição
@@ -195,16 +200,167 @@
 // SORT
 // Ordena os elementos do array
 
-let numeros = [3, 10, 5, 2, 4];
-let letras = ["c", "a", "x", "h"];
+// let numeros = [3, 10, 5, 2, 4];
+// let letras = ["c", "a", "x", "h"];
 
-// para letras
-letras.sort();
-console.log(letras);
+// // para letras
+// letras.sort();
+// console.log(letras);
 
-// para numeros
-numeros.sort((a, b) => a - b);
-console.log(numeros);
+// // para numeros
+// numeros.sort((a, b) => a - b);
+// console.log(numeros);
+
+//REVERSE
+// Inverte a ordem dos elementos no array
+// let numeros = [1, 2, 3]
+// numeros.reverse();
+// console.log(numeros); //[3, 2, 1]
+
+
+
+//JOIN
+//  Junta os elementos de uma array em uma string
+// let palavras = ["JS", "é", "top"];
+
+// let frase = palavras.join(" ");
+// console.log(frase);
+
+
+
+// ADICIONANDO E REMOVENDO ELEMENTOS DO ARRAY
+// PUSH
+// POP
+// SHIFT
+// UNSHIFT
+
+let lista = ["A", "B"];
+
+//PUSH -> Adiciona elementos no final do array
+// lista.push("C"); //adicionando
+// console.log(lista);
+
+// //POP -> Remove os elementos no final da lista
+// lista.pop(); //removendo
+// console.log(lista);
+
+// // SHIFT -> Remove elemento no começo da lista
+// lista.shift(); //remove
+// console.log(lista);
+
+
+
+// // UNSHIFT -> Adcionar elementos no inicio da lista
+// lista.unshift("A"); //Adicionando
+// console.log(lista);
+
+
+
+// SLICE
+// Cria uma copia de uma parte da lista
+/*
+     array.slice(inicial, final)
+
+     inicial -> onde começa
+     final -> onde termina ( não inclui a posição/indice/index)
+*/
+// let numeros = [1, 2, 3, 4];
+
+// let parte = numeros.slice(1, 3); //posições do array
+// console.log(parte); //[2, 3]
+
+
+// SPLICE
+//  remove ou adiciona elementos em QUALQUER POSIÇÃO
+
+/*
+      array.splice(index, count, iteml, ..., itemX);
+
+      index -> indice(posicao do elemento no array);
+      count -> numero de elementos a serem removidos (pode ser 0)
+      item1, ..., itemX -> itens a serem adicionados
+*/
+
+// let numeros = [1, 2, 3, 4]
+
+//removendo elementos, sem adicionar
+// numeros.splice(1, 1);
+// console.log(numeros); //[1, 3, 4]
+
+// let frutas = ["Banana", "Laranja", "Maça", "Manga"];
+
+// frutas.splice(0, 3, "Limão", "KiWi");
+// console.log(frutas);
+
+// Adicionando sem remover
+// frutas.splice(2, 0, "Limão", "Kiwi");
+// console.log(frutas);
+
+
+// REPLACE
+// substitui uma parte da string
+
+/*
+   replace(valorProcurado, "valorQueSubstitui");
+*/
+
+// let texto = "Olá, mundo!";
+
+// let novoTexto = texto.replace("mundo", "cliente");
+// console.log(novoTexto);
+
+
+// NOSSAS FUNÇÕES
+// função comum
+// function exibirMensagem() {
+//     console.log("Bem-vindo(a)!");  
+// }
+
+// exibirMensagem();
+
+
+// função com parâmetro
+// function cumprimentar(nome) {
+//     console.log(`Olá, ${nome}`);
+// }
+// // chamando a função
+// cumprimentar("Ana");
+// cumprimentar("Carlos");
+
+//  função com mais de um parâmetro
+// function somar (n1, n2) {
+//     let soma = n1 + n2
+//     console.log(soma);
+// }
+
+// somar (67, 42);
+
+// outra forma de fazer a função somar()
+// const somar = (n1, n2) => n1 + n2;
+
+// console.log(somar(1,2));
+
+
+// PROMPT
+// recebe/solicita uma informação do usuário
+// o valor recebido pelo prompt() normalmente é string
+
+
+let nome = prompt("Digite o seu nome: ");
+console.log(nome);
+
+// recebendo um numero e convertendo
+// Number() -> converte de forma generica
+let idade = Number(prompt("Digite sua idade: "));
+
+// ParseInt() -> converte o valor para um numero inteiro
+idade = parseInt(prompt("Digite sua idade: "));
+
+// ParseFloat() -> converte o
+
+
+
+
 
 
 
